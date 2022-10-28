@@ -63,7 +63,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-#### Option:two: Source Code
+#### Source Code
 :bell:**go 1.16+** is required
 ```shell
 git clone https://github.com/filswan/go-swan-client.git
