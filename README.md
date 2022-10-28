@@ -71,7 +71,7 @@ cd go-swan-client
 git checkout release-2.0.0
 ./build_from_source.sh
 ```
-After you install from source code, the binary file `swan-client` is under `./build` directory
+After you install from option two, the binary file `swan-client` is under `./build` directory
 
 ### Configuration
 Before creating a task, you should update your configuration in `~/.swan/client/config.toml` to ensure it is right.
