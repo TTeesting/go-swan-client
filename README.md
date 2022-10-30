@@ -283,9 +283,9 @@ OPTIONS:
 
 ---
 ## 2 Blockchain RPC Service
-Swan-client can offer balockchain rpc service. As the first version, swan-client 
+The second feature of swan-client is blockchain rpc service. It is supported by POKT [RPCList](https://rpclist.info). As the first version, swan-client provides users [deploy a RPC service](#21-Deploy-RPC-Service) and uses [RPC Command Service](#22-RPC-Command-Service).
 
-  * The following table shows the full list of supported chain.
+  * The following table shows the full list of supported chain until now.
 
 	ChainID | ChainName
 	:-: | :-:
