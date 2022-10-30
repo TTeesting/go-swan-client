@@ -13,23 +13,23 @@ Swan-client toolkit includes the following features:
 
 ## Table of Contents
 - [1. Filecoin Deal Sender](#1-Filecoin-Deal-Sender)
-	- [1.1 Installation](#1-1-Installation)
+	- [1.1 Installation](#11-Installation)
 		- [From Prebuilt Package](#From-Prebuilt-Package)
 		- [From Source Code](#From-Source-Code)
-	- [1.2 Configuration](#1-2-Configuration)
-	- [1.3 Generate CAR Files](#1-3-Genarate-CAR-Files)
+	- [1.2 Configuration](#12-Configuration)
+	- [1.3 Generate CAR Files](#13-Genarate-CAR-Files)
 		- [Lotus API](#Lotus-API)
 		- [Graphsplit](#Graphsplit)
 		- [IPFS API](#IPFS-API)
 		- [ipfs-car](#ipfs-car)
-	- [1.4 Upload CAR Files to IPFS](#1-4-Upload-CAR-Files-to-IPFS)
-	- [1.5 Create A Task](#1-5-Create-A-Task)
+	- [1.4 Upload CAR Files to IPFS](#14-Upload-CAR-Files-to-IPFS)
+	- [1.5 Create A Task](#15-Create-A-Task)
 		- [Private Task](#Private-Task)
 		- [Auto-bid Task](#Auto-bid-Task)
 		- [Manual-bid Task](#Manual-bid-Task)
 - [2. Blockchain RPC Service](#2-Blockchain-RPC-Service)
-	- [2.1 Deploy RPC Service](#2-1-Deploy-RPC-Service)
-	- [2.2 RPC Command Service](#2-2-RPC-Command-Service)
+	- [2.1 Deploy RPC Service](#21-Deploy-RPC-Service)
+	- [2.2 RPC Command Service](#22-RPC-Command-Service)
 ## 1. Filecoin Deal Sender
 As a PiB level data onboarding tool for Filecoin Network, Swan-client can help users prepare data and send the data to storage providers in Filecoin network. 
  - Generate CAR files from your source files by graphsplit, lotus, ipfs or ipfs-car.
