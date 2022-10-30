@@ -31,7 +31,7 @@ Swan-client toolkit includes the following features:
 	- [2.1 Deploy RPC Service](#21-Deploy-RPC-Service)
 	- [2.2 RPC Command Service](#22-RPC-Command-Service)
 ## 1. Filecoin Deal Sender
-As a PiB level data onboarding tool for Filecoin Network, Swan-client can help users prepare data and send the data to storage providers in Filecoin network. 
+As a PiB level data onboarding tool for Filecoin Network, Swan-client can help users prepare data and send the data to storage providers in Filecoin network. The main features and steps are as follows:
  - Generate CAR files from your source files by graphsplit, lotus, ipfs or ipfs-car.
  - Upload the CAR files to IPFS server and generate metadata file(JSON and CSV) for sending offline-deals. 
  - Propose offline-deals based on the metadata file.
