@@ -202,7 +202,7 @@ OPTIONS:
 
 ### Create A Task
 You can create three different kind of task using the `car.json` or `car.csv` 
-#### Option:one: Private Task
+#### Private Task
 You can directly send deals to miners by creating a  private task
 
 ```shell
@@ -224,7 +224,7 @@ OPTIONS:
 **Files generated after this step:**
 - `[task-name]-metadata.json`: contains `Uuid` and `Deals` for storage providers to import deals.
 
-### Option:two: Auto-bid Task
+### Auto-bid Task
 ```shell
 ./swan-client task --input-dir [json_or_csv_absolute_path] --out-dir [output_files_dir] --auto-bid true --max-copy-number 5
 
@@ -244,7 +244,7 @@ OPTIONS:
 **Files generated after this step:**
 - `[task-name]-metadata.json`: contains `Uuid` and `Deals` for storage providers to import deals.
 
-### Option:three: Manual-bid Task
+### Manual-bid Task
 You can create manual-bid task on the swan platform. And each storage providers can apply this task from swan platform. After that, you can send deals to the storage providers.
 
  **(1) Create manulal-bid task:**
