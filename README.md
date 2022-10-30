@@ -18,8 +18,8 @@ Swan-client toolkit includes the following features:
 		- [From Source Code](#From-Source-Code)
 	- [1.2 Configuration](#12-Configuration)
 	- [1.3 Generate CAR Files](#13-Genarate-CAR-Files)
-		- [Lotus API](#Lotus-API)
 		- [Graphsplit](#Graphsplit)
+		- [Lotus API](#Lotus-API)
 		- [IPFS API](#IPFS-API)
 		- [ipfs-car](#ipfs-car)
 	- [1.4 Upload CAR Files to IPFS](#14-Upload-CAR-Files-to-IPFS)
@@ -32,7 +32,7 @@ Swan-client toolkit includes the following features:
 	- [2.2 RPC Command Service](#22-RPC-Command-Service)
 ## 1. Filecoin Deal Sender
 As a PiB level data onboarding tool for Filecoin Network, Swan-client can help users prepare data and send the data to storage providers in Filecoin network. The main features and steps are as follows:
- - Generate CAR files from your source files by graphsplit, lotus, ipfs or ipfs-car.
+ - Generate CAR files from your source files by [graphsplit](#Graphsplit), [lotus](#Lotus-API), [IPFS](#IPFS-API) or [ipfs-car](#ipfs-car).
  - Upload the CAR files to IPFS server and generate metadata file(JSON and CSV) for sending offline-deals. 
  - Propose offline-deals based on the metadata file.
  - Generate a final metadata file for storage providers to import deals.
