@@ -26,8 +26,8 @@ Swan-client toolkit includes the following features:
 	- [Create A Task](#Create-A-Task)
 		- [Private Task](#Private-Task)
 		- [Auto-bid Task](#Auto-bid-Task)
-		- [Manual-bid Task](#Manua-bid-Task)
-- [Blockchain RPC Service](#Blockchain-RPC-Service)
+		- [Manual-bid Task](#Manual-bid-Task)
+- [2. Blockchain RPC Service](#2.-Blockchain-RPC-Service)
 	- [Deploy RPC Service](#Deploy-RPC-Service)
 	- [RPC Command Service](#RPC-Command-Service)
 ## 1. Filecoin Deal Sender
