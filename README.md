@@ -283,7 +283,7 @@ OPTIONS:
 - `[task-name]-deals.json`: `Deals`infomation updated based on `[task-name]-metadata.json` generated on previous step
 
 ---
-## Blockchain RPC Service
+## 2 Blockchain RPC Service
 Swan-client can offer balockchain rpc service. As the first version, swan-client 
 
   * The following table shows the full list of supported chain.
