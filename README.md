@@ -13,23 +13,23 @@ Swan-client toolkit includes the following features:
 
 ## Table of Contents
 - [1. Filecoin Deal Sender](#1-Filecoin-Deal-Sender)
-	- [Installation](#Installation)
+	- [1.1 Installation](#1-1-Installation)
 		- [From Prebuilt Package](#From-Prebuilt-Package)
 		- [From Source Code](#From-Source-Code)
-	- [Configuration](#Configuration)
-	- [Generate CAR Files](#Genarate-CAR-Files)
+	- [1.2 Configuration](#1-2-Configuration)
+	- [1.3 Generate CAR Files](#1-3-Genarate-CAR-Files)
 		- [Lotus API](#Lotus-API)
 		- [Graphsplit](#Graphsplit)
 		- [IPFS API](#IPFS-API)
 		- [ipfs-car](#ipfs-car)
-	- [Upload CAR Files to IPFS](#Upload-CAR-Files-to-IPFS)
-	- [Create A Task](#Create-A-Task)
+	- [1.4 Upload CAR Files to IPFS](#1-4-Upload-CAR-Files-to-IPFS)
+	- [1.5 Create A Task](#1-5-Create-A-Task)
 		- [Private Task](#Private-Task)
 		- [Auto-bid Task](#Auto-bid-Task)
 		- [Manual-bid Task](#Manual-bid-Task)
 - [2. Blockchain RPC Service](#2-Blockchain-RPC-Service)
-	- [Deploy RPC Service](#Deploy-RPC-Service)
-	- [RPC Command Service](#RPC-Command-Service)
+	- [2.1 Deploy RPC Service](#2-1-Deploy-RPC-Service)
+	- [2.2 RPC Command Service](#2-2-RPC-Command-Service)
 ## 1. Filecoin Deal Sender
 As a PiB level data onboarding tool for Filecoin Network, Swan-client can help users prepare data and send the data to storage providers in Filecoin network. 
  - Generate CAR files from your source files by graphsplit, lotus, ipfs or ipfs-car.
@@ -51,7 +51,7 @@ swan-client can help users send their data to storage providers by creating thre
 <img src="http://yuml.me/diagram/plain/activity/(start)->(Generate CAR Files)->(Upload CAR Files to IPFS)->(Create Manual-Bid Task)->(Send Deals)->(end)" >
 
 
-### Installation
+### 1.1 Installation
 #### **From Prebuilt Package**
 
 See [release assets](https://github.com/filswan/go-swan-client/releases)
@@ -73,7 +73,7 @@ git checkout release-2.0.0
 ```
 After you install from option two, the binary file `swan-client` is under `./build` directory
 
-### Configuration
+### 1.2 Configuration
 Before creating a task, you should update your configuration in `~/.swan/client/config.toml` to ensure it is right.
 ```shell
 vi ~/.swan/client/config.toml
@@ -106,7 +106,7 @@ duration = 1512000                             # How long the Storage Providers 
 start_deal_time_interval = 500                 # The interval between two deals sent, default: 500ms
 ```
 
-### Generate CAR Files
+### 1.3 Generate CAR Files
 A CAR file is an independent unit to be sent to storage providers, swan-client provides four different ways to generate CAR files, and the CAR file will be imported to lotus.
 
 #### Lotus API
@@ -186,7 +186,7 @@ OPTIONS:
 - `car.csv`: contains information for CAR file
 - `[source-files-dir-name].car`: the source file(s) will be merged into this CAR file
 
-### Upload CAR Files to IPFS
+### 1.4 Upload CAR Files to IPFS
 :bell:- `[ipfs_server].download_url_prefix` and `[ipfs_server].upload_url_prefix` are required to upload CAR files to IPFS server.
 
 ```shell
@@ -200,7 +200,7 @@ OPTIONS:
 - `car.json`: the `CarFileUrl` of CAR files will be updated
 - `car.csv`: the `CarFileUrl` of CAR files will be updated
 
-### Create A Task
+### 1.5 Create A Task
 You can create three different kind of task using the `car.json` or `car.csv` 
 #### Private Task
 You can directly send deals to miners by creating a  private task
@@ -304,7 +304,7 @@ Swan-client can offer balockchain rpc service. As the first version, swan-client
 	12 | Evmos
 	13 | Swimmer Network
 
-### Deploy RPC Service
+### 2.1 Deploy RPC Service
 
 Start RPC service.
 ```
@@ -321,7 +321,7 @@ $ curl --location --request POST '127.0.0.1:8099/chain/rpc' \
 output: 
        {"id":1,"jsonrpc":"2.0","result":"0xf1c622"}
 ```
-### RPC Command Service
+### 2.2 RPC Command Service
 Query chain height and wallet balance by using subcommands under `rpc` provided by `swan-client`.
 
  -  Ethereum Mainnet Example:
