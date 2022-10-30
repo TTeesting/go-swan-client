@@ -187,7 +187,7 @@ OPTIONS:
 - `[source-files-dir-name].car`: the source file(s) will be merged into this CAR file
 
 ### Upload CAR Files to IPFS
-:bell:- `[ipfs_server].download_url_prefix` and `[ipfs_server].upload_url_prefix` are required to upload CAR files to IPFS server.
+:bell:- `[ipfs_server].download_url_prefix` and `[ipfs_server].upload_url_prefix` are required to upload the CAR files to IPFS server.
 
 ```shell
 ./swan-client upload -input-dir [input_file_dir]
