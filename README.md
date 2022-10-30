@@ -283,7 +283,7 @@ OPTIONS:
 
 ---
 ## 2 Blockchain RPC Service
-The second feature of swan-client is blockchain rpc service. It is supported by POKT [RPCList](https://rpclist.info). As the first version, swan-client provides users [deploy a RPC service](#21-Deploy-RPC-Service) and uses [RPC Command Service](#22-RPC-Command-Service).
+The second feature of swan-client is blockchain rpc service. It is supported by [POKT RPCList](https://rpclist.info). As the first version, swan-client provides users [deploy a RPC service](#21-Deploy-RPC-Service) and uses [RPC Command Service](#22-RPC-Command-Service). It is worth noting that the blockchain RPC services provided by swan-client are free at present. More importantly, the RPC service provided by swan-client is compatible with thirteen public chain jsonrpc-api. Detailed public chain RPC-API documents and blockchain browsers can be found [here](document/rpc-cmd-example.md ':include')
 
   * The following table shows the full list of supported chain until now.
 
@@ -305,7 +305,7 @@ The second feature of swan-client is blockchain rpc service. It is supported by 
 
 ### 2.1 Deploy RPC Service
 
-Start RPC service.
+You can deploy your RPC service by the following command. And the example give you a test case of your rpc service. More important, the RPC service is 
 ```
 nohup swan-client daemon >> swan-client.log 2>&1 &
 ```
