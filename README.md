@@ -283,7 +283,7 @@ OPTIONS:
 
 ---
 ## 2 Blockchain RPC Service
-The second feature of swan-client is blockchain rpc service. It is supported by [POKT RPCList](https://rpclist.info). As the first version, swan-client provides users [deploy a RPC service](#21-Deploy-RPC-Service) and uses [RPC Command Service](#22-RPC-Command-Service). It is worth noting that the blockchain RPC services provided by swan-client are free at present. More importantly, the RPC service provided by swan-client is compatible with thirteen public chain jsonrpc-api. Detailed public chain RPC-API documents and blockchain browsers can be found [here](document/rpc-cmd-example.md ':include')
+The second feature of swan-client is blockchain rpc service. It is supported by [POKT RPCList](https://rpclist.info). As the first version, swan-client provides users [deploy a RPC service](#21-Deploy-RPC-Service) and uses [RPC Command Service](#22-RPC-Command-Service). It is worth noting that the blockchain RPC services provided by swan-client are free at present. 
 
   * The following table shows the full list of supported chain until now.
 
@@ -305,7 +305,7 @@ The second feature of swan-client is blockchain rpc service. It is supported by 
 
 ### 2.1 Deploy RPC Service
 
-You can deploy your RPC service by the following command. And the example give you a test case of your rpc service. More important, the RPC service is 
+You can deploy your RPC service by the following command. And the example give you a test case of your rpc service. More importantly, the RPC service provided by swan-client is compatible with thirteen public chain jsonrpc-api. The detail of public chain RPC-API documents and blockchain browsers can be found [here](document/rpc-cmd-example.md ':include') 
 ```
 nohup swan-client daemon >> swan-client.log 2>&1 &
 ```
@@ -321,9 +321,9 @@ output:
        {"id":1,"jsonrpc":"2.0","result":"0xf1c622"}
 ```
 ### 2.2 RPC Command Service
-Query chain height and wallet balance by using subcommands under `rpc` provided by `swan-client`.
+The RPC command can help you query the latest chain height and wallet balance, the cases of Ethereum and Binance Smart Chain are as follows:
 
- -  Ethereum Mainnet Example:
+ -  (1) Ethereum Mainnet Example:
 ```
 # query the current height
 $ swan-client rpc height --chain ETH
@@ -341,7 +341,7 @@ output:
         Address: 0x29D5527CaA78f1946a409FA6aCaf14A0a4A0274b
         Balance: 749.53106079798394945
 ```
- - Binance Smart Chain Mainnet Example:
+ - (2) Binance Smart Chain Mainnet Example:
 ```
 # query the current height
 $ swan-client rpc height --chain BNB
@@ -359,4 +359,4 @@ output:
         Address: 0x4430b3230294D12c6AB2aAC5C2cd68E80B16b581
         Balance: 0.027942338705784518
 ```
-* More example details [here](document/rpc-cmd-example.md ':include')
+* More examples can be seen [here](document/rpc-cmd-example.md ':include')
