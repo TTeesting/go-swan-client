@@ -12,7 +12,7 @@ Swan-client toolkit includes the following features:
  - Blockchain RPC Service (supported by Pocket)
 
 ## Table of Contents
-- [1. Filecoin Deal Sender](#1.-Filecoin-Deal-Sender)
+- [1. Filecoin Deal Sender](#1-Filecoin-Deal-Sender)
 	- [Installation](#Installation)
 		- [From Prebuilt Package](#From-Prebuilt-Package)
 		- [From Source Code](#From-Source-Code)
@@ -27,7 +27,7 @@ Swan-client toolkit includes the following features:
 		- [Private Task](#Private-Task)
 		- [Auto-bid Task](#Auto-bid-Task)
 		- [Manual-bid Task](#Manual-bid-Task)
-- [2. Blockchain RPC Service](#2.-Blockchain-RPC-Service)
+- [2. Blockchain RPC Service](#2-Blockchain-RPC-Service)
 	- [Deploy RPC Service](#Deploy-RPC-Service)
 	- [RPC Command Service](#RPC-Command-Service)
 ## 1. Filecoin Deal Sender
