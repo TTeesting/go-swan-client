@@ -9,10 +9,10 @@ Swan-client is an important Web3 toolkit. It provides different tools to help us
 Swan-client toolkit includes the following features:
 
  - Filecoin Deal Sender 
- - Blockchain RPC Service (Pocket supported)
+ - Blockchain RPC Service (supported by Pocket)
 
 ## Table of Contents
-- [Filecoin Deal Sender](#Filecoin-Deal-Sender)
+- [1. Filecoin Deal Sender](#1.-Filecoin-Deal-Sender)
 	- [Installation](#Installation)
 		- [From Prebuilt Package](#From-Prebuilt-Package)
 		- [From Source Code](#From-Source-Code)
@@ -30,7 +30,7 @@ Swan-client toolkit includes the following features:
 - [Blockchain RPC Service](#Blockchain-RPC-Service)
 	- [Deploy RPC Service](#Deploy-RPC-Service)
 	- [RPC Command Service](#RPC-Command-Service)
-## Filecoin Deal Sender
+## 1. Filecoin Deal Sender
 As a PiB level data onboarding tool for Filecoin Network, Swan-client can help users prepare data and send the data to storage providers in Filecoin network. 
  - Generate CAR files from your source files by graphsplit, lotus, ipfs or ipfs-car.
  - Upload the CAR files to IPFS server and generate metadata file(JSON and CSV) for sending offline-deals. 
