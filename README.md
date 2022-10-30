@@ -1,4 +1,4 @@
-# Swan-Client 
+# Swan-Client Tool Guideline
 [![Made by FilSwan](https://img.shields.io/badge/made%20by-FilSwan-green.svg)](https://www.filswan.com/)
 [![Chat on discord](https://img.shields.io/badge/join%20-discord-brightgreen.svg)](https://discord.com/invite/KKGhy8ZqzK)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
@@ -9,7 +9,7 @@ Swan-client is an important Web3 toolkit. It provides different tools to help us
 Swan-client toolkit includes the following features:
 
  - Filecoin Deal Sender 
- - Blockchain RPC Service (supported by Pocket)
+ - Blockchain RPC Service (supported by Pocket Network)
 
 ## Table of Contents
 - [1. Filecoin Deal Sender](#1-Filecoin-Deal-Sender)
@@ -282,7 +282,7 @@ OPTIONS:
 - `[task-name]-deals.json`: `Deals`infomation updated based on `[task-name]-metadata.json` generated on previous step
 
 ---
-## 2 Blockchain RPC Service
+## 2. Blockchain RPC Service
 The second feature of swan-client is blockchain rpc service. It is supported by [POKT RPCList](https://rpclist.info). As the first version, swan-client provides users [deploy a RPC service](#21-Deploy-RPC-Service) and uses [RPC Command Service](#22-RPC-Command-Service). It is worth noting that the blockchain RPC services provided by swan-client are free at present. 
 
   * The following table shows the full list of supported chain until now.
