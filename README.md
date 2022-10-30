@@ -15,7 +15,7 @@ Swan-client toolkit includes the following features:
 - [Filecoin Deal Sender](#Filecoin-Deal-Sender)
 	- [Installation](#Installation)
 		- [From Prebuilt Package](#From-Prebuilt-Package)
-		- [From Source Code11111](#From-Source-Code)
+		- [From Source Code](#From-Source-Code)
 	- [Configuration](#Configuration)
 	- [Generate CAR Files](#Genarate-CAR-Files)
 		- [Lotus API](#Lotus-API)
@@ -109,7 +109,7 @@ start_deal_time_interval = 500                 # The interval between two deals 
 ### Generate CAR Files
 A CAR file is an independent unit to be sent to storage providers, swan-client provides four different ways to generate CAR files, and the CAR file will be imported to lotus.
 
-#### Option:one: Lotus API
+#### Lotus API
 :bell: This option will generate a CAR file for each file in `--input-dir`.
 
 :bell: A running **Lotus** node is required.
@@ -127,7 +127,7 @@ OPTIONS:
 - `car.csv`: contains information for both source files and CAR files
 - `[source-file-name].car`: each source file has a related CAR file
 
-#### Option:two: Graphsplit
+#### Graphsplit
 :bell: This option can split a file under source directory or the files in a whole directory to one or more car file(s) in output directory.
 ```shell
 ./swan-client generate-car graphsplit car --input-dir [input_files_dir] --out-dir [car_files_output_dir]
@@ -150,7 +150,7 @@ OPTIONS:
 
 Credits should be given to filedrive-team. More information can be found [here](https://github.com/filedrive-team/go-graphsplit)
 
-#### Option:three: IPFS API
+#### IPFS API
 :bell: This option will merge files under source directory to one car file in output directory using IPFS API.
 
 :bell: A running **IPFS** node is required.
@@ -168,7 +168,7 @@ OPTIONS:
 - `car.csv`: contains information for CAR file
 - `[dataCID].car`: the source file(s) will be merged into this car file
 
-#### Option:four: ipfs-car Command
+#### ipfs-car 
 :bell: `ipfs-car` pacakage is **required**: `sudo npm install -g ipfs-car`
 
 :bell: This option will merge files under source directory to one car file in output directory using `ipfs-car` command.
