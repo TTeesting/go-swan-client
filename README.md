@@ -9,13 +9,13 @@ Swan-client is an important Web3 toolkit. It provides different tools to help us
 Swan-client toolkit includes the following features:
 
  - Filecoin Deal Sender 
- - Blockchain RPC Service (Pre-release)
+ - Blockchain RPC Service (Pocket supported)
 
 ## Table of Contents
 - [Filecoin Deal Sender](#Filecoin-Deal-Sender)
 	- [Installation](#Installation)
-		- [Prebuilt Package](#Prebuilt-Package)
-		- [Source Code11111](#Source-Code)
+		- [From Prebuilt Package](#From-Prebuilt-Package)
+		- [From Source Code11111](#From-Source-Code)
 	- [Configuration](#Configuration)
 	- [Generate CAR Files](#Genarate-CAR-Files)
 		- [Lotus API](#Lotus-API)
@@ -51,10 +51,10 @@ swan-client can help users send their data to storage providers by creating thre
 <img src="http://yuml.me/diagram/plain/activity/(start)->(Generate CAR Files)->(Upload CAR Files to IPFS)->(Create Manual-Bid Task)->(Send Deals)->(end)" >
 
 
-
-
 ### Installation
-#### Option:one:  **Prebuilt package**: See [release assets](https://github.com/filswan/go-swan-client/releases)
+#### **From Prebuilt Package**
+
+See [release assets](https://github.com/filswan/go-swan-client/releases)
 ```shell
 mkdir swan-client
 cd swan-client
@@ -63,7 +63,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-#### Source Code
+#### **From Source Code**
 :bell:**go 1.16+** is required
 ```shell
 git clone https://github.com/filswan/go-swan-client.git
